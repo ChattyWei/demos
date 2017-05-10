@@ -81,7 +81,9 @@ const mapDispatchToProps = (dispatch) => {
             }
 
         } else {
+            
             dom.onclick = fn;
+
         }
 
     }
