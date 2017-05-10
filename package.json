@@ -1,0 +1,58 @@
+{
+  "name": "soam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack-dev-server --hot --progress",
+    "build": "set NODE_ENV=production&&webpack-dev-server --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gold",
+    "wind"
+  ],
+  "author": "wanghaijiang",
+  "license": "",
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "bundle-loader": "^0.5.4",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.0",
+    "html-webpack-plugin": "^2.26.0",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^1.2.2",
+    "react-hot-loader": "^1.3.1",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.3.3",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "antd": "^2.8.1",
+    "highcharts": "^5.0.9",
+    "highcharts-exporting": "^0.1.2",
+    "immutable": "^3.8.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.1",
+    "jquery.cookie": "^1.4.1",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.3.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-highcharts": "^11.5.0",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  }
+}

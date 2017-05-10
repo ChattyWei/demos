@@ -1,0 +1,463 @@
+{
+    "amazonCloud": true,
+    "url": {
+        "soam": "http://10.68.100.32:8080",
+        "amazonSoam": "http://54.223.105.253:8888",
+        "v3": "http://54.223.200.134"
+    },
+    "moduleName": {
+        "cockpit": {
+            "name": "驾驶舱"
+        },
+        "monitor": {
+            "name": "实时监控",
+            "board": {
+                "name": "监控看板"
+            },
+            "running": {
+                "name": "运行监视",
+                "overview": {
+                    "name": "运行概览"
+                },
+                "distribution": {
+                    "name": "地理分布"
+                },
+                "turboPv": {
+                    "name": "风机光伏矩阵"
+                },
+                "booster": {
+                    "name": "升压站矩阵"
+                },
+                "control": {
+                    "name": "调控概览"
+                },
+                "prediction": {
+                    "name": "集合预报"
+                },
+                "info": {
+                    "name": "信息"
+                }
+            },
+            "warning": {
+                "name": "故障报警",
+                "search": {
+                    "name": "报警查询"
+                },
+                "setting": {
+                    "name": "报警提示设置"
+                }
+            },
+            "control": {
+                "name": "批量控制"
+            },
+            "data": {
+                "name": "数据管理",
+                "plan": {
+                    "name": "计划电量录入"
+                }
+            }
+        },
+        "healthy": {
+            "name": "健康管理",
+            "overview": {
+                "name": "健康总览"
+            },
+            "handling": {
+                "name": "预警处理",
+                "handling": {
+                    "name": "预警处理"
+                },
+                "history": {
+                    "name": "历史查询"
+                },
+                "subscribe": {
+                    "name": "订阅管理"
+                },
+                "report": {
+                    "name": "报告"
+                }
+            }
+        },
+        "business": {
+            "name": "业务智能",
+            "dashboard": {
+                "name": "经营仪表盘",
+                "group": {
+                    "name": "集团"
+                },
+                "area": {
+                    "name": "区域"
+                },
+                "wind": {
+                    "name": "风场"
+                },
+                "info": {
+                    "name": "wbi信息"
+                }
+            },
+            "KPI": {
+                "name": "KPI指标",
+                "PBA": {
+                    "name": "PBA分析"
+                },
+                "loss": {
+                    "name": "损失电量分析"
+                },
+                "reliability": {
+                    "name": "可靠性分析"
+                },
+                "failure": {
+                    "name": "top10故障损失分析"
+                }
+            },
+            "report": {
+                "name": "报表分析",
+                "common": {
+                    "name": "通用报表"
+                },
+                "curve": {
+                    "name": "功率曲线一致性分析"
+                }
+            },
+            "tools": {
+                "name": "分析工具",
+                "scatter": {
+                    "name": "散点图绘制分析"
+                },
+                "curve": {
+                    "name": "功率曲线绘制分析"
+                }
+            },
+            "filling": {
+                "name": "数据填报",
+                "price": {
+                    "name": "阶段上网电价"
+                },
+                "income": {
+                    "name": "成本录入"
+                }
+            }
+        },
+        "system": {
+            "name": "系统管理",
+            "user": {
+                "name": "用户管理"
+            },
+            "role": {
+                "name": "角色管理"
+            }
+        }
+    },
+    "menu": [
+        {
+            "name": "驾驶舱",
+            "iconNormal": "jsc.png",
+            "iconActive": "jsc_active.png",
+            "route": "/frame/cockpit",
+            "sub": null
+        },
+        {
+            "name": "实时监控",
+            "iconNormal": "ssjk.png",
+            "iconActive": "ssjk_active.png",
+            "route": "",
+            "sub": [
+                {
+                    "name": "监控看板",
+                    "iconNormal": "jsc.png",
+                    "iconActive": "jsc_active.png",
+                    "route": "/frame/monitor/board",
+                    "sub": null
+                },
+                {
+                    "name": "运行监视",
+                    "iconNormal": "yy.png",
+                    "iconActive": "yy_active.png",
+                    "route": "/frame/monitor/running",
+                    "sub": [
+                        {
+                            "name": "运行概览",
+                            "route": "/frame/monitor/running/overview"
+                        },
+                        {
+                            "name": "地理分布",
+                            "route": "/frame/monitor/running/distribution"
+                        },
+                        {
+                            "name": "风机光伏矩阵",
+                            "route": "/frame/monitor/running/turboPv"
+                        },
+                        {
+                            "name": "升压站矩阵",
+                            "route": "/frame/monitor/running/booster"
+                        },
+                        {
+                            "name": "调控概览",
+                            "route": "/frame/monitor/running/control"
+                        },
+                        {
+                            "name": "集合预报",
+                            "route": "/frame/monitor/running/prediction"
+                        },
+                        {
+                            "name": "信息",
+                            "route": "/frame/monitor/running/info",
+                            "hide": true
+                        }
+                    ]
+                },
+                {
+                    "name": "故障报警",
+                    "iconNormal": "gj.png",
+                    "iconActive": "gj_active.png",
+                    "route": "/frame/monitor/warning",
+                    "sub": [
+                        {
+                            "name": "报警查询",
+                            "route": "/frame/monitor/warning/search"
+                        },
+                        {
+                            "name": "报警提醒设置",
+                            "route": "/frame/monitor/warning/setting"
+                        }
+                    ]
+                },
+                {
+                    "name": "批量控制",
+                    "iconNormal": "pl.png",
+                    "iconActive": "pl_active.png",
+                    "route": "/frame/monitor/control",
+                    "sub": null
+                },
+                {
+                    "name": "业务报表",
+                    "iconNormal": "yw.png",
+                    "iconActive": "yw_active.png",
+                    "route": "/frame/monitor/report",
+                    "hide": true,
+                    "sub": null
+                },
+                {
+                    "name": "数据管理",
+                    "iconNormal": "sj.png",
+                    "iconActive": "sj_active.png",
+                    "route": "/frame/monitor/data",
+                    "sub": [
+                        {
+                            "name": "计划电量录入",
+                            "route": "/frame/monitor/data/plan"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "健康管理",
+            "iconNormal": "jkgl.png",
+            "iconActive": "jkgl_active.png",
+            "route": "/frame/healthy",
+            "sub": [
+                {
+                    "name": "健康总览",
+                    "iconNormal": "jkzl.png",
+                    "iconActive": "jkzl_active.png",
+                    "route": "/frame/healthy/overview",
+                    "sub": null
+                },
+                {
+                    "name": "预警处理",
+                    "iconNormal": "yjcl.png",
+                    "iconActive": "yjcl_active.png",
+                    "route": "/frame/healthy/handling",
+                    "sub": [
+                        {
+                            "name": "预警处理",
+                            "route": "/frame/healthy/handling/handling"
+                        },
+                        {
+                            "name": "历史查询",
+                            "route": "/frame/healthy/handling/history"
+                        },
+                        {
+                            "name": "订阅管理",
+                            "route": "/frame/healthy/handling/subscribe"
+                        },
+                        {
+                            "name": "报告",
+                            "route": "/frame/healthy/handling/report"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "资产管理",
+            "iconNormal": "zcgl.png",
+            "iconActive": "zcgl_active.png",
+            "route": "/frame/asset",
+            "hide": true,
+            "sub": null
+        },
+        {
+            "name": "业务智能",
+            "iconNormal": "ywfx.png",
+            "iconActive": "ywfx_active.png",
+            "route": "/frame/business",
+            "sub": [
+                {
+                    "name": "经营仪表盘",
+                    "iconNormal": "ybp.png",
+                    "iconActive": "ybp1.png",
+                    "route": "/frame/business/dashboard",
+                    "sub": [
+                        {
+                            "name": "集团",
+                            "route": "/frame/business/dashboard/group",
+                            "sub": null
+                        },
+                        {
+                            "name": "区域",
+                            "route": "/frame/business/dashboard/area",
+                            "sub": null
+                        },
+                        {
+                            "name": "风场",
+                            "route": "/frame/business/dashboard/wind",
+                            "sub": null
+                        },
+                        {
+                            "name": "wbi信息",
+                            "route": "/frame/business/dashboard/info",
+                            "sub": null,
+                            "hide": true
+                        }
+                    ]
+                },
+                {
+                    "name": "KPI指标",
+                    "iconNormal": "kizb.png",
+                    "iconActive": "kizb1.png",
+                    "route": "/frame/business/KPI",
+                    "sub": [
+                        {
+                            "name": "PBA分析",
+                            "route": "/frame/business/KPI/PBA",
+                            "sub": null
+                        },
+                        {
+                            "name": "损失电量分析",
+                            "route": "/frame/business/KPI/loss",
+                            "sub": null
+                        },
+                        {
+                            "name": "可靠性分析",
+                            "route": "/frame/business/KPI/reliability",
+                            "sub": null
+                        },
+                        {
+                            "name": "top10故障损失分析",
+                            "route": "/frame/business/KPI/failure",
+                            "sub": null
+                        }
+                    ]
+                },
+                {
+                    "name": "报表分析",
+                    "iconNormal": "bbfx.png",
+                    "iconActive": "bbfx1.png",
+                    "route": "/frame/business/report",
+                    "hide": true,
+                    "sub": [
+                        {
+                            "name": "通用报表",
+                            "route": "/frame/business/report/common",
+                            "sub": null
+                        },
+                        {
+                            "name": "功率曲线一致性分析",
+                            "route": "/frame/business/report/curve",
+                            "sub": null
+                        }
+                    ]
+                },
+                {
+                    "name": "分析工具",
+                    "iconNormal": "fxgj.png",
+                    "iconActive": "fxgj1.png",
+                    "route": "/frame/business/tools",
+                    "hide": true,
+                    "sub": [
+                        {
+                            "name": "散点图绘制分析",
+                            "route": "/frame/business/tools/scatter",
+                            "sub": null
+                        },
+                        {
+                            "name": "功率曲线绘制分析",
+                            "route": "/frame/business/tools/curve",
+                            "sub": null
+                        }
+                    ]
+                },
+                {
+                    "name": "数据填报",
+                    "iconNormal": "sjtb.png",
+                    "iconActive": "sjtb1.png",
+                    "route": "/frame/business/filling",
+                    "sub": [
+                        {
+                            "name": "阶段上网电价",
+                            "route": "/frame/business/filling/price",
+                            "sub": null
+                        },
+                        {
+                            "name": "成本录入",
+                            "route": "/frame/business/filling/income",
+                            "sub": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "综合查询",
+            "iconNormal": "zhfx.png",
+            "iconActive": "zhfx_active.png",
+            "route": "/frame/searching",
+            "hide": true,
+            "sub": null
+        },
+        {
+            "name": "系统管理",
+            "iconNormal": "xtgl.png",
+            "iconActive": "xtgl_active.png",
+            "route": "/frame/system",
+            "sub": [
+                {
+                    "name": "用户管理",
+                    "iconNormal": "userm.png",
+                    "iconActive": "userm_active.png",
+                    "route": "/frame/system/user",
+                    "sub": null
+                },
+                {
+                    "name": "角色管理",
+                    "iconNormal": "rolem.png",
+                    "iconActive": "rolem_active.png",
+                    "route": "/frame/system/role",
+                    "sub": null
+                }
+            ]
+        }
+    ],
+    "changeRouteException": [
+        {
+            "after": "风机光伏矩阵",
+            "name": "信息"
+        },
+        {
+            "after": "风场",
+            "name": "wbi信息"
+        }
+    ]
+}
