@@ -7,6 +7,8 @@ import {connect} from 'react-redux';
 import ContainerComponent from '../common/ContainerComponent.jsx'
 import DecoratorAndAdapter  from './decoratorAndAdapter.jsx';
 import _ from 'lodash';
+
+
 //适配器
 const adapter = {
     id: '001',
@@ -42,8 +44,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 
     return {
-
+ 
         init: () => {
+            console.log(111);
         },
         btnClick: () => {
             let content = document.getElementById('name_txt').value;
@@ -81,7 +84,7 @@ const mapDispatchToProps = (dispatch) => {
             }
 
         } else {
-            
+
             dom.onclick = fn;
 
         }

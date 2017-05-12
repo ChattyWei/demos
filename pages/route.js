@@ -17,7 +17,7 @@ const appRoute = {
         getIndexRoute(partialNextState, callback) {
             require.ensure([], function (require) {
                 callback(null, {
-                    component: require('./cssDemo/decoratorAndAdapter_container.jsx').default
+                    component: require('./undercore/util.jsx').default
                 })
             })
         },
@@ -34,7 +34,8 @@ const appRoute = {
                     require('./easyuiDemo.jsx').default,
                     require('./charts/line.jsx').default,
                     require('./ant_design/test.jsx').default,
-                    require('./cssDemo/decoratorAndAdapter_container.jsx').default
+                    require('./cssDemo/decoratorAndAdapter_container.jsx').default,
+                    require('./undercore/util.jsx').default
 
 
                 ]);
